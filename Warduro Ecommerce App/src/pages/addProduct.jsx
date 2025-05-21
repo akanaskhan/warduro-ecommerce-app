@@ -135,9 +135,9 @@ export default function AddProduct() {
                 </span>
               )}
             </div>
-            <div className="mx-4">
+            <div className="mx-4 ">
   <label className="block mb-2">Select Sizes</label>
-  <div className="flex flex-wrap gap-4">
+  <div className="flex flex-wrap gap-4 justify-center">
     {["MD", "LG", "XL"].map((size) => (
       <label key={size} className="flex items-center space-x-2">
         <input

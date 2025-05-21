@@ -6,7 +6,7 @@ import previous from "../assets/images/previous.png";
 import previous3 from "../assets/images/previous3.png";
 function Slider() {
   return (
-    <div className="-z-50 mt-16 md:mt-20 lg:mt-12 xl:mt-12   h-vh themeBackground ">
+    <div className="-z-50 mt-16 md:mt-20 lg:mt-12 xl:mt-12   h-vh themeBackground  ">
       <div
         id="carouselExampleAutoplaying"
         className="carousel    carousel-fade   h-auto "

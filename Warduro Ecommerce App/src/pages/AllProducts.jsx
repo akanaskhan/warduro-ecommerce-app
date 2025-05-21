@@ -89,6 +89,7 @@ export default function AllEditableProducts(){
               <th className="border border-gray-300 p-2">Title</th>
               <th className="border border-gray-300 p-2">Category</th>
               <th className="border border-gray-300 p-2">Product Quality</th>
+              <th className="border border-gray-300 p-2">Product Description</th>
               <th className="border border-gray-300 p-2">Price</th>
               <th className="border border-gray-300 p-2">Sale Price</th>
               <th className="border border-gray-300 p-2">Actions</th>
@@ -120,6 +121,14 @@ export default function AllEditableProducts(){
                         defaultValue={product.ProductCategory}
                         onChange={(e) =>
                           handleInputChange(e, "ProductCategory", product.id)
+                        }
+                      />
+                    </td>
+                    <td className="border border-gray-300 p-2">
+                      <Input
+                        defaultValue={product.desc}
+                        onChange={(e) =>
+                          handleInputChange(e, "desc", product.id)
                         }
                       />
                     </td>
@@ -165,6 +174,9 @@ export default function AllEditableProducts(){
                     </td>
                     <td className="border border-gray-300 p-2">
                       {product.ProductCategory}
+                    </td>
+                    <td className="border border-gray-300 p-2">
+                      {product.desc}
                     </td>
                     <td className="border border-gray-300 p-2">
                       {product.price}
